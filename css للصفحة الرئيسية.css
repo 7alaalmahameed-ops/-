@@ -1,0 +1,114 @@
+/* إعدادات أساسية للصفحة */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    transition: background 0.5s, color 0.5s;
+    background: #1561348a;
+    color: #000000ad;
+    margin: 0;
+    padding: 0;
+}
+
+.dark-mode {
+    background: #222;
+    color: #fff;
+}
+
+/* إعدادات الشعار */
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 100px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#logo:hover {
+    transform: scale(1.1);
+}
+
+/* إعدادات الزر المبدل للوضع الليلي */
+#toggle-mode {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    padding: 10px 20px;
+    border: none;
+    background: #db9b1294;
+    color: #222;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#toggle-mode:hover {
+    background: #035f4b;
+}
+
+/* إعدادات العنوان */
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 80px;
+    color: #1d533aea;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* إعدادات الفيديو */
+.video-container {
+    margin: 20px auto;
+    width:55;
+    max-width:1000px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* إعدادات الأزرار */
+.buttons-container {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 30px;  /* زيادة المسافة داخل الزر */
+    border: 2px solid #125a24; /* إضافة حافة رقيقة حول الزر */
+    background: #ffffff;  /* جعل الخلفية بيضاء */
+    color: #125a24; /* اللون الأساسي للنص */
+    font-size: 18px;  /* تغيير حجم الخط */
+    font-weight: bold;  /* جعل النص عريض */
+    cursor: pointer;
+    border-radius: 50px;  /* إضافة زوايا دائرية */
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s, color 0.3s, transform 0.3s;  /* إضافة تأثيرات التحول */
+}
+
+.btn:hover {
+    background: #125a24;  /* تغيير خلفية الزر عند التمرير */
+    color: white;  /* تغيير لون النص إلى الأبيض */
+    transform: translateY(-3px);  /* رفع الزر قليلاً */
+}
+
+/* الوضع الداكن */
+.dark-mode .btn {
+    border-color: #144125;  /* تغيير لون الحافة في الوضع الداكن */
+    color: #144125;  /* تغيير النص في الوضع الداكن */
+}
+
+.dark-mode .btn:hover {
+    background: #144125;  /* تغيير خلفية الزر في الوضع الداكن */
+    color: white;  /* تغيير لون النص إلى الأبيض */
+    transform: translateY(-3px);  /* نفس التأثير عند التمرير */
+}
